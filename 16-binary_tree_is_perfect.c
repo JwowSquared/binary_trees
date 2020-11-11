@@ -27,23 +27,23 @@ size_t perf_size(const binary_tree_t *tree)
 */
 size_t perf_height(const binary_tree_t *tree)
 {
-        size_t out, left, right;
+	size_t out, left, right;
 
-        if (tree == NULL)
-                return (0);
+	if (tree == NULL)
+		return (0);
 
-        if (tree->left == NULL && tree->right == NULL)
-                return (1);
+	if (tree->left == NULL && tree->right == NULL)
+		return (1);
 
-        left = perf_height(tree->left);
-        right = perf_height(tree->right);
+	left = perf_height(tree->left);
+	right = perf_height(tree->right);
 
-        if (left > right)
-                out = left;
-        else
-                out = right;
+	if (left > right)
+		out = left;
+	else
+		out = right;
 
-        return (1 + out);
+	return (1 + out);
 }
 
 /**
