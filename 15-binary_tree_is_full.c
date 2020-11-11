@@ -1,12 +1,12 @@
 #include "binary_trees.h"
 
 /**
-* helper - this works, but the output is backwards. needed to flip it
+* is_full - this works, but the output is backwards. needed to flip it
 * @tree: node to be considered the root
 *
 * Return: 1 if tree is full, else 0
 */
-int helper(const binary_tree_t *tree)
+int is_full(const binary_tree_t *tree)
 {
 	int left, right;
 
@@ -17,8 +17,8 @@ int helper(const binary_tree_t *tree)
 		if (tree->left != NULL || tree->right != NULL)
 			return (1);
 
-	left = helper(tree->left);
-	right = helper(tree->right);
+	left = is_full(tree->left);
+	right = is_full(tree->right);
 
 	return (left | right);
 }
