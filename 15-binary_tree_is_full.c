@@ -24,7 +24,7 @@ int helper(const binary_tree_t *tree)
 }
 
 /**
-* binary_tree_is_full - determines if a tree has only nodes with 0 or 2 children
+* binary_tree_is_full - determines if a tree has only nodes with 0 | 2 children
 * @tree: node to be considered the root
 *
 * Return: 1 if tree is full, else 0
