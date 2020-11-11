@@ -1,4 +1,4 @@
-[2;2R[2;2RINARY_TREES_H_
+#ifndef _BINARY_TREES_H_
 #define _BINARY_TREES_H_
 
 #include <stddef.h>
