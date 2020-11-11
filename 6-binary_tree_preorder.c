@@ -3,6 +3,7 @@
 /**
 * binary_tree_preorder - applies a function to all nodes in a binary tree
 * @tree: root of tree to apply function to
+* @func: any function that takes the integer of each tree node
 */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
